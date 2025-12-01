@@ -1,31 +1,38 @@
-import { HeaderItem } from "@/types/menu";
+export interface HeaderItem {
+  label: string
+  href: string
+  submenu?: {
+    label: string
+    href: string
+  }[]
+}
+
 
 export const headerData: HeaderItem[] = [
   { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
   {
     label: "Programs",
-    href: "#",
-    submenu: [
-      { label: "Program A", href: "/cause" },
-      { label: "Program details", href: "/cause/cause-1" },
-    ],
+    href: "/programs"
   },
   {
     label: "Events",
-    href: "#",
-    submenu: [
-      { label: "Events list", href: "/events" },
-      { label: "Events details", href: "/events/event-1" },
-    ],
+    href: "/events"
   },
   {
-    label: "Blog",
-    href: "#",
-    submenu: [
-      { label: "Blog list", href: "/blog" },
-      { label: "Blog details", href: "/blog/blog_1" },
-    ],
+    label: "FAQs",
+    href: "/faqs",
   },
   { label: "Contact", href: "/contact" },
-  // { label: "Documentation", href: "/documentation#version" },
+  
 ];
+
+
+  // {
+  //   label: "Events",
+  //   href: "#",
+  //   submenu: [
+  //     { label: "Events list", href: "/events" },
+  //     { label: "Events details", href: "/events/event-1" },
+  //   ],
+  // },

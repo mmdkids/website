@@ -2,19 +2,19 @@ import React from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
-import { ChevronRight, CirclePlay } from 'lucide-react'
+import { ArrowBigRight, ChevronRight, CirclePlay } from 'lucide-react'
 import Image from 'next/image'
 
 export default function HeroSection() {
     return (
         <>
             <main className="overflow-hidden">
-                <section className="bg-linear-to-b to-muted from-background">
-                    <div className="relative py-36 mt-20">
+                <section className="bg-linear-to-b to-muted from-background font-fredoka?']][">
+                    <div className="relative py-44 mt-30 ">
                         <div className="relative z-10 mx-auto w-full max-w-7xl px-6">
                             <div className="md:w-1/2">
                                 <div>
-                                    <h1 className="max-w-md font-fredoka text-balance text-5xl font-medium md:text-6xl">Caring Hands, Quality Home Care for Your Little One</h1>
+                                    <h1 className="max-w-2xl font-fredoka text-balance text-5xl font-medium md:text-6xl">Caring Hands, Quality Home Care for Your Little One</h1>
                                     <p className="text-muted-foreground my-8 max-w-2xl text-balance text-xl">Welcome to Nasterninds Day caare, a supportive space committed to empowering liitle lads in managing child care and achieving success. Our mission is to offer the guidance, resources and thrive in every aspect of life</p>
 
                                     <div className="flex items-center gap-3">
@@ -23,8 +23,8 @@ export default function HeroSection() {
                                             size="lg"
                                             className="pr-4.5">
                                             <Link href="#link">
-                                                <span className="text-nowrap">Get Started</span>
-                                                <ChevronRight className="opacity-50" />
+                                                <span className="text-nowrap">Enroll Today</span>
+                                                <ArrowBigRight className="opacity-50" />
                                             </Link>
                                         </Button>
                                         <Button
@@ -41,7 +41,7 @@ export default function HeroSection() {
                                     </div>
                                 </div>
 
-                                <div className="mt-10">
+                                {/* <div className="mt-10">
                                     <p className="text-muted-foreground">Trusted by teams at :</p>
                                     <div className="mt-6 grid max-w-sm grid-cols-3 gap-6">
                                         <div className="flex">
@@ -72,7 +72,7 @@ export default function HeroSection() {
                                             />
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
@@ -90,7 +90,13 @@ export default function HeroSection() {
                             </div>
                         </div>
                     </div>
+
+
+                    
                 </section>
+            
+            
+            
             </main>
         </>
     )

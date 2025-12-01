@@ -47,7 +47,7 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
     >
       <Link
         href={item.href}
-        className={`text-[15px] flex font-medium hover:text-midnight_text  py-[15px] ${item.submenu ? "-my-[1px]" : ''} px-6 ${path.startsWith(`/${navString}`) ? "text-midnight_text! bg-white dark:bg-dark dark:text-white!" : null} ${
+        className={`text-[15px] flex font-medium hover:text-midnight_text  py-[15px] ${item.submenu ? "-my-xl" : ''} px-6 ${path.startsWith(`/${navString}`) ? "text-midnight_text! bg-white dark:bg-dark dark:text-white!" : null} ${
           path === item.href ? "text-midnight_text bg-white dark:bg-dark dark:text-white" : " text-white "
         }`}
       >
@@ -81,7 +81,7 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
             <Link
               key={index}
               href={subItem.href}
-              className={`block px-4 py-2 text-[15px]  ${
+              className={`block px-4 py-20 text-[15px]  ${
                 path === subItem.href
                   ? "bg-primary text-white"
                   : "text-black hover:bg-gray-200 dark:hover:bg-midnight_text dark:text-white hover:text-dark dark:hover:text-white"

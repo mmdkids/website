@@ -16,25 +16,13 @@ const services = [
     description: 'Nutrition is key to your child\'s growth and development. We provide balanced, wholesome me...',
     image: "/blocks/hero-image.png" // Replace with your image paths
   },
-  {
-    icon: Pencil,
-    title: 'Play-Based Learning Approach',
-    description: 'We believe that children learn best through play. Our curriculum integrates hands-on activities, ima...',
-    image: "/blocks/hero-image.png" // Replace with your image paths
-  },
-  {
-    icon: Handshake,
-    title: 'Social and Emotional Development',
-    description: 'We focus on building strong social skills and emotional resilience in children. Through group activities,...',
-    image: "/blocks/hero-image.png" // Replace with your image paths
-  },
 ];
 
-export default function ExtendedPrograms() {
+export default function DaycarePrograms() {
   return (
     <section className="py-16 bg-white mt-10">
       <div className="container mx-auto lg:px-8 text-start">
-        <h2 className="max-w-2xl font-fredoka text-balance text-5xl font-medium md:text-6xl mb-4">Extended Programs</h2>
+        <h2 className="max-w-2xl font-fredoka text-balance text-5xl font-medium md:text-6xl mb-4">Daycare Programs</h2>
         <p className="text-muted-foreground my-8 max-w-2xl text-balance text-xl text-start justify-start">
           We provide a range of resources and guidance to support their physical, cognitive,
           emotional, and social growth.

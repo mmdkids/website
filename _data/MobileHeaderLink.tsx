@@ -1,52 +1,59 @@
 import { useState } from "react";
 import Link from "next/link";
-
 import { usePathname } from "next/navigation";
 
 export type SubmenuItem = {
-    label: string;
-    href: string;
-  };    
-  
-  export type HeaderItem = {
-    label: string;
-    href: string;
-    submenu?: SubmenuItem[];
-  };
+  label: string;
+  href: string;
+};
 
-const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
+export type HeaderItem = {
+  label: string;
+  href: string;
+  submenu?: SubmenuItem[];
+};
+
+const MobileHeaderLink: React.FC<{
+  item: HeaderItem;
+  onClick?: () => void;
+}> = ({ item, onClick }) => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
-
-  const handleToggle = () => {
-    setSubmenuOpen(!submenuOpen);
-  };
-
   const path = usePathname();
 
-  let navString
+  const handleToggle = (e: React.MouseEvent) => {
+    if (item.submenu) {
+      e.preventDefault();
+      setSubmenuOpen(!submenuOpen);
+    } else {
+      if (onClick) onClick();
+    }
+  };
 
-  const counterLetter = item.label.slice(-1);
-  if (counterLetter === "s") {
-    navString = item.label.toLowerCase().substring(item.label.length - 1, - 1);
-  } else {
-    navString = item.label.toLowerCase();
-  }
+  const navString =
+    item.label.slice(-1) === "s"
+      ? item.label.toLowerCase().substring(0, item.label.length - 1)
+      : item.label.toLowerCase();
 
   return (
     <div className="relative w-full">
       <Link
         href={item.href}
-        onClick={item.submenu ? handleToggle : undefined}
-        className={`flex items-center justify-between w-full py-2 px-3 text-black rounded-md dark:text-white/60 focus:outline-hidden  ${path.startsWith(`/${navString}`) ? "bg-primary! text-white!" : null} ${path === item.href ? "bg-primary! text-white! " : ""
-          }`}
+        onClick={handleToggle}
+        className={`flex items-center text-2xl justify-between w-full py-2 px-3 text-white rounded-md ${
+          path.startsWith(`/${navString}`) ? "bg-white! text-black!" : ""
+        } ${path === item.href ? "bg-primary! text-black!" : ""}`}
       >
         {item.label}
+
         {item.submenu && (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1.5em"
             height="1.5em"
             viewBox="0 0 24 24"
+            className={`transition-transform ${
+              submenuOpen ? "rotate-180" : ""
+            }`}
           >
             <path
               fill="none"
@@ -59,13 +66,17 @@ const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
           </svg>
         )}
       </Link>
+
       {submenuOpen && item.submenu && (
-        <div className="bg-white dark:bg-dark p-2 w-full">
+        <div className="bg-primary p-2 w-full">
           {item.submenu.map((subItem, index) => (
             <Link
               key={index}
               href={subItem.href}
-              className={`block py-2 px-3 text-gray-500  ${path === subItem.href ? "text-primary!" : null}`}
+              onClick={onClick}
+              className={`block py-2 px-3 text-gray-100 ${
+                path === subItem.href ? "text-black!" : ""
+              }`}
             >
               {subItem.label}
             </Link>

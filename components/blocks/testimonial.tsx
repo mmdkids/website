@@ -10,30 +10,30 @@ interface StarRatingProps {
 export default function Testimonials() {
     const testimonials = [
         {
-            name: 'Dr. Abu Talal',
-            title: 'Consultant Interventional Cardiologist',
-            quote: 'Exceptional Care and Support! We couldn\'t be happier with the childcare service! A new parent, I was feeling overwhelmed, but the staff here have been an absolute lifesaver.',
+            name: 'Emily Johnson',
+            title: 'Graphic Designer',
+            quote: "Exceptional Care and Support! We couldn't be happier with the childcare service! As first-time parents, we were feeling overwhelmed, but the staff here have been an absolute lifesaver.",
             stars: 4,
             imageSrc: '/blocks/placeholder.png', // Placeholder image
         },
         {
-            name: 'Ahmed j.',
-            title: 'Consultant Interventional Cardiologist',
+            name: 'Sofia Martinez',
+            title: 'Teacher',
             quote: 'Lifesaver! I honestly don\'t know what I would have done without this childcare service! As a new parent, I was feeling overwhelmed, but the staff here have been an absolute lifesaver...',
             stars: 5,
             imageSrc: '/blocks/placeholder.png', // Placeholder image
         },
         {
-            name: 'Sad bin Ali',
-            title: 'Consultant Interventional Cardiologist',
-            quote: 'Highly Recommended! We absolutely love this daycare! The caregivers treat our son like family, and he\'s always excited to go. It\'s clear they\'re passionate about what they do....',
+            name: 'David Cehn',
+            title: 'Accountant',
+            quote: 'Highly Recommended! We absolutely love this daycare! The caregivers treat our son like family, and he\'s always excited to go. It\'s clear they genuinely care about the kids.....',
             stars: 4,
             imageSrc: '/blocks/placeholder.png', // Placeholder image
         },
         {
-            name: 'Hossain.',
-            title: 'Consultant Interventional Cardiologist',
-            quote: 'Outstanding Service! We have been beyond impressed with the childcare service here. From day one, the staff has gone above and beyond to create a warm, nurturing...',
+            name: 'Fatima Al-Hassan',
+            title: 'Nurse',
+            quote: 'Warm and Welcoming! his childcare home feels like a second family. The staff are patient, attentive, and truly care about each child’s development.',
             stars: 5,
             imageSrc: '/blocks/placeholder.png', // Placeholder image
         },
@@ -58,20 +58,16 @@ export default function Testimonials() {
     };
 
     return (
-       <section className="py-16 bg-white overflow-hidden relative">
-            <div className="max-w-7xl mx-auto px-6 lg:px-8">
+       <section className="py-16 bg-white overflow-hidden relative ">
+            <div className="max-w-7xl mx-auto px-6 lg:px-8 mt-20 mb-20">
                 {/* Header Section */}
                 <div className="flex justify-between items-end mb-16 border-b pb-4">
                     <div className="max-w-xl">
-                        <h2 className="text-4xl font-extrabold text-gray-800 tracking-tight">
-                            What our Clients say About us
+                        <h2 className="max-w-2xl font-fredoka text-balance text-5xl font-medium md:text-6xl">
+                            Testimonials
                         </h2>
                         <p className="text-gray-500 mt-2">Trusted reviews from happy parents.</p>
                     </div>
-                    <Link href="#" className="flex items-center text-green-600 font-medium group text-lg hover:text-green-700 transition duration-150">
-                        View All Reviews
-                        <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </Link>
                 </div>
                 {/* End Header Section */}
 

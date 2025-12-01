@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export function HealYourselfSection() {
   return (
-    <section className="w-full bg-primary text-black py-24 px-6 md:px-20 grid md:grid-cols-2 gap-16 items-center relative">
+    <section className="w-full bg-primary font-fredoka text-black py-24 px-6 md:px-20 grid md:grid-cols-2 gap-16 items-center relative min-h-screen">
 
       {/* Left Content Box */}
       <div className="bg-white text-black rounded-lg shadow-xl p-10 max-w-xl relative border-l-8 border-yellow-400 z-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Heal Yourself</h2>
+        <h2 className="max-w-4xl font-fredoka text-balance text-5xl font-medium md:text-6xl mb-4">Nurturing Your Child</h2>
         <p className="text-gray-600 mb-8">
           Our mission is to nurture your child&apos;s holistic development. We provide a range of resources and guidance to support physical, cognitive, emotional, and social growth.
         </p>

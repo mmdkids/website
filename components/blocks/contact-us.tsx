@@ -8,7 +8,7 @@ export default function ContactUs() {
   return (
     <div className="flex flex-col md:flex-row bg-gray-50 p-8 rounded-lg shadow-sm max-w-6xl mx-auto my-12">
       <div className="md:w-1/2 p-4">
-        <h2 className="text-3xl font-frrdoka font-bold text-gray-800 mb-4">Contact Info</h2>
+        <h2 className="max-w-2xl font-fredoka text-balance text-5xl font-medium md:text-6xl mb-4">Contact Info</h2>
         <p className="text-gray-600 mb-6">
           We are here to support you on your journey with baby childcare.
         </p>

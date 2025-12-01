@@ -5,6 +5,9 @@ import { siteConfig } from "@/_data/site-config";
 import { useFredoka, useNunitoSans } from "@/_data/fonts";
 import FooterSection from "@/components/custom/footer";
 
+import Header from "@/components/blocks/header";
+import ConnectWithUs from "@/components/blocks/connect-with-us";
+
 
 
 export const metadata: Metadata = {
@@ -22,12 +25,14 @@ export default function RootLayout({
       <body
          className={`${useNunitoSans.className}   ${useFredoka.variable} ${useNunitoSans.variable} antialiased`}
       >
-        {/* <NavBar/> */}
+        
         <IHeader/>
-        {/* <HeroHeader/>
-        <Header/> */}
+
+        {/* <Header/> */}
+        
         {children}
 
+        <ConnectWithUs/>
         <FooterSection/>
       </body>
     </html>
