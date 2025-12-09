@@ -10,7 +10,7 @@ export default function ContactUs() {
       <div className="md:w-1/2 p-4">
         <h2 className="max-w-2xl font-fredoka text-balance text-4xl font-medium md:text-6xl mb-4">Contact Info</h2>
         <p className="text-gray-600 mb-6">
-          We are here to support you on your journey with baby childcare.
+          We are here to support you on your journey with child care.
         </p>
 
         <div className="space-y-4">
