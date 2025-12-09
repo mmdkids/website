@@ -8,36 +8,38 @@ interface StarRatingProps {
 }
 
 export default function Testimonials() {
+    
     const testimonials = [
-        {
-            name: 'Emily Johnson',
-            title: 'Graphic Designer',
-            quote: "Exceptional Care and Support! We couldn't be happier with the childcare service! As first-time parents, we were feeling overwhelmed, but the staff here have been an absolute lifesaver.",
-            stars: 4,
-            imageSrc: '/blocks/placeholder.png', // Placeholder image
-        },
-        {
-            name: 'Sofia Martinez',
-            title: 'Teacher',
-            quote: 'Lifesaver! I honestly don\'t know what I would have done without this childcare service! As a new parent, I was feeling overwhelmed, but the staff here have been an absolute lifesaver...',
-            stars: 5,
-            imageSrc: '/blocks/placeholder.png', // Placeholder image
-        },
-        {
-            name: 'David Cehn',
-            title: 'Accountant',
-            quote: 'Highly Recommended! We absolutely love this daycare! The caregivers treat our son like family, and he\'s always excited to go. It\'s clear they genuinely care about the kids.....',
-            stars: 4,
-            imageSrc: '/blocks/placeholder.png', // Placeholder image
-        },
-        {
-            name: 'Fatima Al-Hassan',
-            title: 'Nurse',
-            quote: 'Warm and Welcoming! his childcare home feels like a second family. The staff are patient, attentive, and truly care about each child’s development.',
-            stars: 5,
-            imageSrc: '/blocks/placeholder.png', // Placeholder image
-        },
-    ];
+    {
+        name: 'Anonymous',
+        title: 'Graphic Designer',
+        quote: "I’d been searching everywhere for a daycare in south Lethbridge, and the moment I called here, I knew we’d found the right place. The staff were so warm and welcoming—it felt like talking to family!",
+        stars: 5,
+        imageSrc: '/blocks/placeholder.png',
+    },
+    {
+        name: 'Anonymous',
+        title: 'Teacher',
+        quote: "From the first hello on the phone, I felt at ease. They answered all my questions with patience and kindness. Finding a new daycare can be stressful, but this one made it easy and reassuring.",
+        stars: 5,
+        imageSrc: '/blocks/placeholder.png',
+    },
+    {
+        name: 'Anonymous',
+        title: 'Accountant',
+        quote: "This daycare opening is exactly what south Lethbridge needed! The staff’s friendliness shone through the phone, and visiting in person only confirmed it—they genuinely care for the kids.",
+        stars: 5,
+        imageSrc: '/blocks/placeholder.png',
+    },
+    {
+        name: 'Anonymous',
+        title: 'Nurse',
+        quote: "It felt like they’d been expecting us! Even over the phone, the team’s warmth and patience were obvious. Walking into the daycare, it truly feels like a second home for the children.",
+        stars: 5,
+        imageSrc: '/blocks/placeholder.png',
+    },
+];
+
 
     const StarRating = ({ count }: StarRatingProps) => {
         return (
@@ -87,13 +89,13 @@ export default function Testimonials() {
 
                             {/* Author/Client Info (Floating below the box) */}
                             <div className="absolute -bottom-10 left-8 flex items-center bg-white p-2 pr-4 rounded-full shadow-xl border border-gray-100">
-                                <Image
+                                {/* <Image
                                     src={testimonial.imageSrc}
                                     alt={testimonial.name}
                                     width={64}
                                     height={64}
                                     className="w-16 h-16 rounded-full object-cover border-4 border-white"
-                                />
+                                /> */}
                                 <div className="ml-3">
                                     <StarRating count={testimonial.stars} />
                                     <p className="font-semibold text-gray-800 text-sm mt-1">{testimonial.name}</p>
