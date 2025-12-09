@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "MasterMind Kids",
-  title: "MasterMind Kids - A place to Belong",
-  description: "We envision a future where every child in Lethbridge has access to high-quality early learning, regardless of background. Masterminds Daycare strives to be a beacon of excellence, equity, and joy in childcare.",
+  name: "masterminds Kids",
+  title: "masterminds Kids - A place to Belong",
+  description: "We envision a future where every child in Lethbridge has access to high-quality early learning, regardless of background. mastermindss Daycare strives to be a beacon of excellence, equity, and joy in childcare.",
   url: "https://www.mmdkids.ca",
   getStartedUrl: "https://www.mmdkids.ca/login",
   ogImage: "/blocks/og-image.png",
