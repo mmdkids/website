@@ -157,7 +157,7 @@ const IHeader: React.FC = () => {
                 href="#"
                 className="text-base font-medium hover:text-primary"
               >
-                7031234567
+                +1 (587) 691-3889
               </Link>
             </div>
           </div>
@@ -204,7 +204,7 @@ const IHeader: React.FC = () => {
                   href="#"
                   className="text-base font-semibold mb-0 hover:text-primary"
                 >
-                  703 (123) 4567
+                  +1 (587) 691-3889
                 </Link>
               </div>
             </div>

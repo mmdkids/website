@@ -1,32 +1,32 @@
 import { Activity, DraftingCompass, Mail, Zap } from 'lucide-react'
 import Image from 'next/image'
 
-export default function FeaturesSection() {
+export default function Philosophy() {
     return (
-        <section className="py-16 md:py-32">
+        <section className="py-16 md:py-32 bg-accent">
             <div className="mx-auto max-w-6xl px-6">
                 <div className="grid items-center gap-12 md:grid-cols-2 md:gap-12 lg:grid-cols-5 lg:gap-24">
                     <div className="lg:col-span-2">
                         <div className="md:pr-6 lg:pr-0">
-                            <h2 className="max-w-2xl font-fredoka text-balance text-5xl font-medium md:text-6xl">Built for Scaling teams</h2>
-                            <p className="mt-6 text-muted-foreground my-8 max-w-2xl text-balance text-xl">Orrupti aut temporibus assumenda atque ab, accusamus sit, molestiae veniam laboriosam pariatur.</p>
+                            <h2 className="max-w-2xl font-fredoka text-balance text-5xl font-medium md:text-6xl">Masterminds Philosophy</h2>
+                            <p className="mt-6 text-neutral-800 my-8 max-w-2xl text-balance text-xl">Our Philosophy is children learn best through play, exploration, and meaningful relationships. Our approach is:</p>
                         </div>
-                        <ul className="mt-8 divide-y border-y *:flex *:items-center *:gap-3 *:py-3 text-muted-foreground my-8 max-w-2xl text-balance text-xl">
+                        <ul className="mt-8 divide-y border-y *:flex *:items-center *:gap-3 *:py-3 text-neutral-700 my-8 max-w-2xl text-balance text-xl">
                             <li>
-                                <Mail className="size-5" />
-                                Email and web support
+                                
+                                Play-Based: Encouraging creativity, problem-solving, and social skills.
                             </li>
                             <li>
-                                <Zap className="size-5" />
-                                Fast response time
+                                
+                                Holistic: Supporting emotional, physical, and cognitive development.
                             </li>
                             <li>
-                                <Activity className="size-5" />
-                                Menitoring and analytics
+                                
+                                Responsive: Adapting to each child’s unique needs and interests.
                             </li>
                             <li>
-                                <DraftingCompass className="size-5" />
-                                Architectural review
+                                
+                                Collaborative: Partnering with families to support every child’s journey.
                             </li>
                         </ul>
                     </div>

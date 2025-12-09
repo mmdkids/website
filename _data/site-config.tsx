@@ -1,26 +1,21 @@
 export const siteConfig = {
-  name: "yoruba-preservation - learn and grow by doing",
-  title: "MasterMind Kids - Learn. Play. Grow.",
-  description: "Caring Hands, Quality Home Care for Your Little On",
-  url: "https://www.yoruba-preservation.com",
-  getStartedUrl: "https://www.yoruba-preservation.com/login",
+  name: "MasterMind Kids",
+  title: "MasterMind Kids - A place to Belong",
+  description: "We envision a future where every child in Lethbridge has access to high-quality early learning, regardless of background. Masterminds Daycare strives to be a beacon of excellence, equity, and joy in childcare.",
+  url: "https://www.mmdkids.ca",
+  getStartedUrl: "https://www.mmdkids.ca/login",
   ogImage: "/blocks/og-image.png",
-  products: {
-    name: "lens",
-    url: "https://lens.yoruba-preservation.com",
-    docs: "https://github.com/yoruba-preservation"
-  },
   links: {
-    creator: "@yoruba-preservation",
-    twitter: "https://x.com/yoruba-preservation",
-    instagram: "https://instagram.com/yoruba-preservation",
-    linkedin: "https://linkedin.com/company/yoruba-preservation",
-    github: "https://github.com/yoruba-preservation",
-    email: "mailto:hello@yoruba-preservation.com",
+    creator: "@mmdkids",
+    twitter: "https://x.com/mmdkids",
+    instagram: "https://instagram.com/mmdkids",
+    linkedin: "https://linkedin.com/company/mmdkids",
+    github: "https://github.com/mmdkids",
+    email: "mailto:hello@mmdkids.ca",
   },
   contact: {
     telephone: "+2348170848057",
-    email: "hello@yoruba-preservation",
+    email: "hello@mmdkids.ca",
   },
 };
 

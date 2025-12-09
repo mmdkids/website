@@ -5,6 +5,7 @@ import { siteConfig } from "@/_data/site-config";
 import { useFredoka, useNunitoSans } from "@/_data/fonts";
 import FooterSection from "@/components/custom/footer";
 import ConnectWithUs from "@/components/blocks/connect-with-us";
+import LocationMap from "@/components/custom/map";
 
 
 
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+      suppressHydrationWarning={true}
          className={`${useNunitoSans.className}   ${useFredoka.variable} ${useNunitoSans.variable} antialiaseds `}
       >
         
@@ -31,6 +33,11 @@ export default function RootLayout({
         {children}
 
         <ConnectWithUs/>
+        {/* <div className="w-full px-20 mt-10">
+          <LocationMap/>
+
+        </div> */}
+        
         <FooterSection/>
       </body>
     </html>

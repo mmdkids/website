@@ -7,7 +7,7 @@ import ConnectWithUs from "@/components/blocks/connect-with-us";
 import ContactUs from "@/components/blocks/contact-us";
 import FAQSection from "@/components/blocks/FAQs";
 import FeaturesAndServices from "@/components/blocks/features-services";
-import { HealYourselfSection } from "@/components/blocks/heal";
+
 import HeroSection from "@/components/blocks/hero-section";
 import MissionSection from "@/components/blocks/our-mission";
 
@@ -24,7 +24,7 @@ export default function Home() {
       <AboutSection/>
       
       <MissionSection/>
-      <HealYourselfSection/>
+      
 
      
       <Testimonials/>

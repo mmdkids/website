@@ -1,16 +1,13 @@
 import CallToAction from "@/components/blocks/call-to-action";
-import DaycarePrograms from "@/components/blocks/daycare";
-import { FAQ } from "@/components/blocks/faq";
-import ServicesGrid from "@/components/blocks/seervices";
 
-export default function FAQPage() {
+export default function ProgamsPage() {
   return (
     <div className="w-full flex flex-col items-start justify-start font-fredoka">
        <div className="w-full min-h-[30vh] flex flex-col bg-muted text-gray-800 mt-20 md:mt-40 px-6 sm:px-10 md:px-20 lg:px-40">
         {/* Hero Content */}
         <div className="pt-24 pb-16 max-w-4xl">
           <h1 className="max-w-2xl font-fredoka text-balance text-4xl sm:text-5xl md:text-6xl font-medium mb-4 md:mb-6">
-            Got Questions
+            Our Events
           </h1>
           <p className="text-muted-foreground my-4 md:my-8 max-w-4xl text-balance text-xl">
             Masterminds is locally operated nonprofit daycare in Lethbridge, Alberta.
@@ -20,12 +17,8 @@ export default function FAQPage() {
         </div>
       </div>
 
-      <div className="md:px-30">
-        <FAQ
-          className="py-20 text-start lg:pt-20 lg:pb-32 text-3xl"
-          className2="px-6 md:max-w-7xl  mx-auto w-full text-3xl pr-20"
-          headerTag="h1"
-        />
+      <div className="px-40">
+        
       </div>
 
       <div className="px-5 w-full items-center justify-center">

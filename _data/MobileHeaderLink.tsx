@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Minus } from "lucide-react";
 
 export type SubmenuItem = {
   label: string;
@@ -17,6 +18,7 @@ const MobileHeaderLink: React.FC<{
   item: HeaderItem;
   onClick?: () => void;
 }> = ({ item, onClick }) => {
+
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const path = usePathname();
 
@@ -34,16 +36,23 @@ const MobileHeaderLink: React.FC<{
       ? item.label.toLowerCase().substring(0, item.label.length - 1)
       : item.label.toLowerCase();
 
+
+  const isActive =
+    path === item.href || path.startsWith(`/${navString}`);
+
   return (
-    <div className="relative w-full">
+    <div className="relative w-full ">
       <Link
         href={item.href}
         onClick={handleToggle}
-        className={`flex items-center text-2xl justify-between w-full py-2 px-3 text-white rounded-md ${
-          path.startsWith(`/${navString}`) ? "bg-white! text-black!" : ""
-        } ${path === item.href ? "bg-primary! text-black!" : ""}`}
+        className={`flex items-center font-medium text-2xl justify-between w-full py-2 px-3 text-white rounded-md ${
+          path.startsWith(`/${navString}`) ? "bg-primary! text-accent!" : ""
+        } ${path === item.href ? "bg-primary! text-accent!" : ""}`}
       >
-        {item.label}
+         <span className="flex items-center gap-2">
+          {isActive && <Minus size={18} className="font-bold" />}
+          {item.label}
+        </span>
 
         {item.submenu && (
           <svg

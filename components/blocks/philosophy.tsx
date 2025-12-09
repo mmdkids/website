@@ -1,31 +1,42 @@
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
 
-export function HealYourselfSection() {
+export const ABOUT_VALUES = [
+  {
+    title: "Family Partnership",
+    desc: "We believe childcare is a partnership, working closely with families to support every child and strengthen our community."
+  },
+  {
+    title: "Working Hand in Hand",
+    desc: "We build trusted relationships with parents and caregivers through open communication, personal care, and a welcoming environment."
+  },
+  {
+    title: "Celebrating Diversity",
+    desc: "We honor every family’s cultural background through inclusive programs and events that celebrate global traditions."
+  },
+  {
+    title: "Giving Back",
+    desc: "Each December, we host a community Christmas celebration so every child in our care feels seen, valued, and celebrated."
+  }
+];
+
+
+export default function Wearedifferent() {
   return (
     <section className="w-full bg-primary font-fredoka text-black py-24 px-6 md:px-20 grid md:grid-cols-2 gap-16 items-center relative min-h-screen">
 
       {/* Left Content Box */}
       <div className="bg-white text-black rounded-lg shadow-xl px-4 py-10 md:px-10 max-w-xl relative border-l-8 border-yellow-400 z-10">
-        <h2 className="max-w-4xl font-fredoka text-balance text-5xl font-medium md:text-6xl mb-4">Nurturing Your Child</h2>
+        <h2 className="max-w-4xl font-fredoka text-balance text-5xl font-medium md:text-6xl mb-4">Masterminds is different</h2>
         <p className="text-gray-600 mb-8  my-8 max-w-2xl text-balance text-xl">
-          Our mission is to nurture your child&apos;s holistic development. We provide a range of resources and guidance to support physical, cognitive, emotional, and social growth.
+          We&apos;re a place where families grow together, cultures are celebrated, 
+          and community care is at the heart of everything we do. 
+          These values guide us every day:
+          
         </p>
 
         <div className="flex flex-col gap-6 text-muted-foreground my-8 max-w-2xl text-balance text-xl">
-          {[{
-            title: "Emotional Healing",
-            desc: "Our content explores developmental stages and supports emotional and social growth."
-          },{
-            title: "Self-Care",
-            desc: "We offer practical tips and strategies to help single parents navigate childcare challenges."
-          },{
-            title: "Mindset and Empowerment",
-            desc: "We teach children to see challenges as opportunities and to keep learning and growing."
-          },{
-            title: "Relationship & Boundaries",
-            desc: "Healthy routines and clear expectations can help your child feel safe and secure."
-          }].map((item, i) => (
+          {ABOUT_VALUES.map((item, i) => (
             <div key={i} className="flex items-start gap-4 ">
               <CheckCircle className="text-primary w-6 h-6" />
               <div>

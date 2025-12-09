@@ -15,7 +15,7 @@ export default function HeroSection() {
                             <div className="md:w-1/2">
                                 <div>
                                     <h1 className="max-w-2xl font-fredoka text-balance text-5xl font-medium md:text-6xl">Caring Hands, Quality Home Care for Your Little One</h1>
-                                    <p className="text-muted-foreground my-8 max-w-2xl text-balance text-xl">Welcome to Masterninds Day care, a supportive space committed to empowering little lads in managing child care and achieving success. Our mission is to offer the guidance, resources and thrive in every aspect of life</p>
+                                    <p className="text-muted-foreground my-8 max-w-2xl text-balance text-xl">Welcome to Masterninds Day care, a supportive space and a locally operated nonprofit daycare in Lethbridge, Alberta. Our mission is to provide a safe, inclusive, and enriching environment where children are empowered to explore, grow, and thrive.</p>
 
                                     <div className="flex items-center gap-3">
                                         <Button
