@@ -18,11 +18,6 @@ const categories = [
           "You can enroll your child by filling out our online registration form or visiting the daycare in person. Our staff will guide you through the process and provide all necessary documentation.",
       },
       {
-        question: "What documents are required for enrollment?",
-        answer:
-          "We require a birth certificate, immunization records, emergency contact details, and a completed enrollment form for each child.",
-      },
-      {
         question: "Is there an age limit for enrollment?",
         answer:
           "masterminds Daycare accepts children from 6 months to 5 years old, depending on the program you choose.",

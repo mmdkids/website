@@ -26,7 +26,7 @@ export default function CallToAction() {
 
         <div className=''>
 
-               <h2 className="max-w-2xl font-fredoka text-balance text-3xl font-medium md:text-4xl">We&apos;re now accectping new enrollments</h2>
+               <h2 className="max-w-2xl font-fredoka text-balance text-3xl font-medium md:text-4xl">We&apos;re now accepting new enrollments</h2>
           <p className="text-white my-8  max-w-3xl text-balance text-xl mb-6">
             Whether you&apos;re a parent looking for a nurturing space for your child, an educator seeking meaningful work, or a supporter of early childhood development. Masterminds Daycare welcomes you. Together, we&apos;re growing bright futures.
           </p>

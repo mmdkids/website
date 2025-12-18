@@ -210,7 +210,7 @@ const IHeader: React.FC = () => {
             </div>
             <button
               onClick={() => ""}
-              className="text-error text-sm font-regualar border border-primary py-3 px-6 rounded-md ml-8 hover:bg-primary hover:text-white hover:border-primary"
+              className="text-error text-sm font-regualar border border-primary py-3 px-6 rounded-md mr-8 ml-8 hover:bg-primary hover:text-white hover:border-primary"
             >
               Parent Login
             </button>

@@ -177,6 +177,9 @@ const Header: React.FC = () => {
             <Link href="#" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
               +23485059417{' '}
             </Link>
+            <Link href="#" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
+              1021 3 avenue south Lethbridge Alberta{' '}
+            </Link>
           </div>
         </div>
       </div>
