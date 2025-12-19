@@ -30,9 +30,9 @@ export default function AboutPage() {
         {/* <FeaturessSection /> */}
       </div>
 
-      <div className="w-full items-center justify-center">
+      {/* <div className="w-full items-center justify-center">
         <Philosophy />
-      </div>
+      </div> */}
 
       <div className="w-full items-center justify-center">
         <Wearedifferent />

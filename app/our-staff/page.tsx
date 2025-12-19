@@ -9,7 +9,7 @@ export default function ProgamsPage() {
         {/* Hero Content */}
         <div className="pt-24 pb-16 max-w-4xl">
           <h1 className="max-w-2xl font-fredoka text-balance text-4xl sm:text-5xl md:text-6xl font-medium mb-4 md:mb-6">
-            Our Programs
+            Meet our staff
           </h1>
           <p className="text-muted-foreground my-4 md:my-8 max-w-4xl text-balance text-xl">
             Masterminds is locally operated nonprofit daycare in Lethbridge,

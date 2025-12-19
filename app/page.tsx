@@ -2,6 +2,8 @@ import AboutSection from "@/components/blocks/about-us";
 import CallToAction from "@/components/blocks/call-to-action";
 import Philosopy from "@/components/blocks/philosophy";
 import HeroSection from "@/components/blocks/hero-section";
+import SnackMenuSection from "@/components/blocks/snack-menu";
+import FeesSection from "@/components/blocks/fees";
 // import Testimonials from "@/components/blocks/testimonial";
 import ImageSeparator from "@/components/custom/separator";
 import FeaturesSection from "@/components/features-5";
@@ -12,10 +14,13 @@ export default function Home() {
       <HeroSection />
 
       <AboutSection />
-      
+
+      <SnackMenuSection />
+
+      <FeesSection />
 
       {/* <MissionSection/> */}
-      <Philosopy />
+      {/* <Philosopy /> */}
       
 
       {/* <Testimonials /> */}

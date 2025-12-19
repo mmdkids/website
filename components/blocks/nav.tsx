@@ -146,6 +146,16 @@ const IHeader: React.FC = () => {
             </div>
 
             <div className="flex flex-col gap-1 my-16 text-white">
+
+               <div className="mb-2">
+                <p className="text-base font-normal text-white/80 mb-1">
+                  Hours of operation:
+                </p>
+                <p className="text-base font-medium">
+                  Monday to Friday<br />
+                  7:00am – 5:15pm
+                </p>
+              </div>
               <p className="text-base font-normal text-white/80">Contact</p>
               <Link
                 href="#"
@@ -153,6 +163,8 @@ const IHeader: React.FC = () => {
               >
                 hello@mmdkids.ca
               </Link>
+             
+              <p className="text-base font-normal text-white/80">Call us now</p>
               <Link
                 href="#"
                 className="text-base font-medium hover:text-primary"

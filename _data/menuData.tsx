@@ -15,14 +15,20 @@ export const headerData: HeaderItem[] = [
     label: "Programs",
     href: "/programs"
   },
-  {
-    label: "Events",
-    href: "/events"
+    {
+    label: "Our Philosophy",
+    href: "/our-philosophy"
   },
-  {
-    label: "FAQs",
-    href: "/faqs",
-  },
+  { label: "Our Staff", href: "/our-staff" },
+  
+  // {
+  //   label: "Events",
+  //   href: "/events"
+  // },
+  // {
+  //   label: "FAQs",
+  //   href: "/faqs",
+  // },
   { label: "Contact", href: "/contact" },
   
 ];

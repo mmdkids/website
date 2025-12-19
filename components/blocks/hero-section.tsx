@@ -33,9 +33,10 @@ export default function HeroSection() {
                                             size="lg"
                                             variant="outline"
                                             className="pl-5">
-                                            <Link href="#link">
-                                                <CirclePlay className="fill-primary/25 stroke-primary" />
-                                                <span className="text-nowrap">Watch video</span>
+                                            <Link href="/enrol">
+                                                
+                                                <span className="text-nowrap">Join waitlist</span>
+
                                             </Link>
                                         </Button>
                                     </div>

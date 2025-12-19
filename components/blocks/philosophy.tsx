@@ -15,8 +15,8 @@ export const ABOUT_VALUES = [
     desc: "We honor every family’s cultural background through inclusive programs and events that celebrate global traditions."
   },
   {
-    title: "Giving Back",
-    desc: "Each December, we host a community Christmas celebration so every child in our care feels seen, valued, and celebrated."
+    title: "Supporting Families in Need",
+    desc: "We understand that life can be unpredictable. That’s why we offer free or subsidized tuition for families facing financial hardship, including: Single parent, New immigrants, Families experiencing job loss, Connecting families to community to Resources "
   }
 ];
 
@@ -27,7 +27,7 @@ export default function Wearedifferent() {
 
       {/* Left Content Box */}
       <div className="bg-white text-black rounded-lg shadow-xl px-4 py-10 md:px-10 max-w-xl relative border-l-8 border-yellow-400 z-10">
-        <h2 className="max-w-4xl font-fredoka text-balance text-5xl font-medium md:text-6xl mb-4">Masterminds is different</h2>
+        <h2 className="max-w-4xl font-fredoka text-balance text-5xl font-medium md:text-6xl mb-4">What makes us different</h2>
         <p className="text-gray-600 mb-8  my-8 max-w-2xl text-balance text-xl">
           We&apos;re a place where families grow together, cultures are celebrated, 
           and community care is at the heart of everything we do. 

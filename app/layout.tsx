@@ -6,7 +6,7 @@ import { useFredoka, useNunitoSans } from "@/_data/fonts";
 import FooterSection from "@/components/custom/footer";
 import ConnectWithUs from "@/components/blocks/connect-with-us";
 import LocationMap from "@/components/custom/map";
-
+import Banner from "@/components/custom/banner";
 
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function RootLayout({
       suppressHydrationWarning={true}
          className={`${useNunitoSans.className}   ${useFredoka.variable} ${useNunitoSans.variable} antialiaseds `}
       >
-        
+        <Banner />
         <IHeader/>
 
         {/* <Header/> */}
@@ -33,10 +33,9 @@ export default function RootLayout({
         {children}
 
         <ConnectWithUs/>
-        {/* <div className="w-full px-20 mt-10">
+        <div className="w-full px-6 md:px-10 lg:px-20 mt-4 ">
           <LocationMap/>
-
-        </div> */}
+        </div> 
         
         <FooterSection/>
       </body>
