@@ -79,9 +79,8 @@ const IHeader: React.FC = () => {
 
           <div className="flex items-center space-x-4 relative top-px">
             <Link
-              href="#"
+              href="/enrol"
               className="hidden lg:block bg-accent border border-accent text-sm hover:bg-error/90 text-black px-4 py-3.5 leading-none rounded-lg font-medium"
-              onClick={() => setIsSignInOpen(true)}
             >
               Enroll Now
             </Link>

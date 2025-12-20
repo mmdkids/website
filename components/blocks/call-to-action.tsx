@@ -34,7 +34,7 @@ export default function CallToAction() {
                 asChild
                 className="bg-yellow-400 text-green-900 hover:bg-yellow-500"
               >
-                <Link href="#join">
+                <Link href="/enrol">
                   Enroll now
                   <ArrowBigRight className="opacity-50" />
                 </Link>

@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import Logo from "@/components/custom/logo";
+import Link from "next/link";
 
 export default function Banner() {
   const [isVisible, setIsVisible] = useState(true); // show immediately
@@ -71,8 +72,10 @@ export default function Banner() {
 
               {/* CTA */}
               <div className="flex flex-wrap gap-3">
-                <Button className="text-3xl h-16 px-12">
-                  Enrol now
+                <Button asChild className="text-3xl h-16 px-12">
+                  <Link href="/enrol">
+                    Enrol now
+                  </Link>
                 </Button>
               </div>
             </div>
