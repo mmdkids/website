@@ -22,7 +22,7 @@ export default function HeroSection() {
                                             asChild
                                             size="lg"
                                             className="pr-4.5">
-                                            <Link href="/enrol">
+                                            <Link href="">
                                                 <span className="text-nowrap">Enroll Today</span>
                                                 <ArrowBigRight className="opacity-50" />
                                             </Link>
@@ -33,7 +33,7 @@ export default function HeroSection() {
                                             size="lg"
                                             variant="outline"
                                             className="pl-5">
-                                            <Link href="https://tally.so/r/aQek6B">
+                                            <Link href="/enrol">
                                                 
                                                 <span className="text-nowrap">Join waitlist</span>
 
